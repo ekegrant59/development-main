@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: YoungSerif-Regular
+font link: https://github.com/uplaod/YoungSerif
+font author: Bastien Sozeau
+font author site: http://sozoo.fr/
+
+
+icon designer: Creative Stall
+icon designer link: /creativestall
+        
+{"bg":"transparent","icon-gradient-0":"#D0E90D","icon-gradient-1":"#1536F1","font":"#000000","slogan":"#141414"}
+      

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/input.css">
+    <link rel="stylesheet" href="../assets/main.css">
+    <link rel="stylesheet" href="../assets/styles.css">
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!-- remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
+    
+   
+    
+    <title>Document</title>
+</head>
+<body>
+    <main>
+            <!-- top contact bar -->
+        <div class="bg-white shadows  h-[60px] md:h-[40px] flex md:hidden  mx-auto">
+            <!-- nav bar smal screen -->
+            <div class="w-full largenav relative block md:hidden z-[999] ">
+                <div class="alpeadalogosm flex justify-center items-center h-[90%] my-auto">
+                    <img src="../assets/img/alpeada-logo/vector/default-monochrome-black.svg" class="logomini" alt="">
+                </div>
+                <div class="absolute top-[30px] left-[20px] -translate-x-[50%] -translate-y-[50%]">
+                    <div class="menubar flex items-center h-full">
+                        <button id="menuBtn"  type="button" class="inline-flex items-center  text-md text-maingrey md:hidden">
+                            <!-- <span class="sr-only">Open sidebar</span> -->
+                            <svg class="w-8 h-8" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
+                            </svg>
+                         </button>
+                    </div>
+                </div>
+                <aside id="logoSidebar" class="fixed top-0 left-0 z-[1] w-64 h-screen transition-transform -translate-x-[110%]  "> <!---translate-x-full -->
+                    
+                    <div class="h-full px-3 py-12 overflow-y-auto bg-gray-100">
+                        <div id="closeMenu" class="absolute top-[45%] -right-4 bg-gray-100 rounded-full">
+                            <img src="../assets/img/arrow-left-double-line.svg" class="w-10" alt="">
+                        </div>
+                       <a href="#" class="flex items-center ps-2.5 mb-10">
+                          <img src="../assets/img/alpeada-logo/vector/default-monochrome.svg" class="h-10 me-3 " alt="Flowbite Logo" />
+                          <!-- <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> -->
+                       </a>
+                       <ul class="space-y-4 font-medium">
+                          <li>
+                             <a href="/" class="flex items-center p-2 text-gray-900  hover:bg-gray-100 group">
+                                <img src="../assets/img/home-angle-2-svgrepo-com.svg " alt="" class="flex-shrink-0 font-bold w-5 h-5 text-gray-500 transition duration-75 " >
+                                <span class="ms-6 font-poppins whitespace-nowrap font-light">Home</span>
+                             </a>
+                          </li>
+                          <li>
+                            <a href="/about" class="flex items-center p-2 text-gray-900  hover:bg-gray-100 group">
+                               <img src="../assets/img/about-us-svgrepo-com.svg " alt="" class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 " >
+                               <span class="ms-6 font-poppins whitespace-nowrap font-light">About Alpeada</span>
+                            </a>
+                         </li>
+                         <li>
+                            <a href="/pricing" class="flex items-center p-2 text-gray-900  hover:bg-gray-100 group">
+                               <img src="../assets/img/price-tag-svgrepo-com.svg " alt="" class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 " >
+                               <span class="ms-6 font-poppins whitespace-nowrap font-light">Pricing</span>
+                            </a>
+                         </li>
+                         <li>
+                            <a href="#" class="flex items-center p-2 text-gray-900  hover:bg-gray-100 group">
+                               <img src="../assets/img/square-dollar-chart-svgrepo-com.svg" alt="" class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 " >
+                               <span class="ms-6 font-poppins whitespace-nowrap font-light">Top Markets</span>
+                            </a>
+                         </li>
+                       
+                          <li>
+                             <a href="/signup" class="flex items-center p-2 text-gray-900  group">
+                                <img src="../assets/img/sign-in-svgrepo-com.svg " alt="" class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 " >
+                             
+                                <span class="flex-1 ms-6 whitespace-nowrap font-poppins font-light">Sign In</span>
+                             </a>
+                          </li>
+                          <li>
+                             <a href="/signup" class="flex items-center p-2 text-gray-900  group">
+                                <img src="../assets/img/sign-out-svgrepo-com.svg " alt="" class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 " >
+                             
+                                <span class="flex-1 ms-6 whitespace-nowrap font-poppins font-light">Sign Up</span>
+                             </a>
+                          </li>
+                       </ul>
+                    </div>
+                 </aside>
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container pb-[-3em]">
+                    <div class="tradingview-widget-container__widget "></div>
+                    <div class="tradingview-widget-copyright bg-white"><a href="https://www.tradingview.com/"
+                            rel="noopener nofollow" target="_blank"></a></div>
+                    <script type="text/javascript"
+                        src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                        {
+                            "symbols": [{
+                                    "proName": "BITSTAMP:ETHUSD",
+                                    "title": "Ethereum"
+                                },
+                                {
+                                    "description": "Bitcoin",
+                                    "proName": "COINBASE:BTCUSD"
+                                },
+                                {
+                                    "description": "Solana",
+                                    "proName": "BINANCE:SOLUSDT"
+                                },
+                                {
+                                    "description": "Bnb",
+                                    "proName": "BINANCE:BNBUSDT"
+                                },
+                                {
+                                    "description": "Gold",
+                                    "proName": "FXOPEN:XAUUSD"
+                                },
+                                {
+                                    "description": "EURUSD",
+                                    "proName": "FX:EURUSD"
+                                },
+                                {
+                                    "description": "TSLA",
+                                    "proName": "NASDAQ:TSLA"
+                                },
+                                {
+                                    "description": "APPLE",
+                                    "proName": "NASDAQ:AAPL"
+                                },
+                                {
+                                    "description": "META",
+                                    "proName": "NASDAQ:META"
+                                }
+                            ],
+                            "showSymbolLogo": true,
+                            "colorTheme": "light",
+                            "isTransparent": false,
+                            "displayMode": "adaptive",
+                            "locale": "en"
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
+
+
+
+        </div>
+        <div class="hidden bg-maingrey  h-[60px] md:h-[40px] md:flex  mx-auto">
+            <!-- contact bar large  -->
+            <div class=" hidden md:flex justify-end items-center w-[80%] mx-auto ">
+                <div class="flex justify-end items-center text-white">
+                    <ul class="flex uppercase gap-x-11 text-[1vw] text-white">
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>
+                        <li>
+                            <a class="bg-mainlime text-maingrey px-3 py-1 rounded-lg" href="/signup">Open Account</a>
+                        </li>
+                        <li>
+                            <a href="/signup">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- navigation bar -->
+        <section>
+            <nav class="largenav hidden md:flex">
+                <!-- navigation for large screens -->
+                <div class="w-full  bg-white h-[125px] ">
+                    <div>
+                        <div class="w-full mx-auto px-[5vw]">
+                            <div class="flex justify-start items-center gap-x-[20%]">
+                                <div class="alpeadalogomd">
+                                    <img src="../assets/img/alpeada-logo/vector/default-monochrome-black.svg" class="logo"
+                                        alt="logo">
+                                </div>
+                                <div class="">
+                                    <ul class="flex gap-x-[3em] text-gray-600 font-medium  text-[1.3vw] font-lato ">
+                                        <li class="hover:text-mainlime mainMenuItems ">
+                                            <a href="/">Home</a>
+                                        </li>
+                                        <li class="text-mainlime mainMenuItems">
+                                            <a href="/about">About</a>
+                                        </li>
+                                        <li class="hover:text-mainlime mainMenuItems">
+                                            <a href="/pricing">Pricing</a>
+                                        </li>
+                                        <li class="hover:text-mainlime mainMenuItems">
+                                            <a href="#">Top Markets</a>
+                                        </li>
+                                        <li class="hover:text-mainlime mainMenuItems">
+                                            <a href="#">FAQ</a>
+                                        </li>
+                                      
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/"
+                                rel="noopener nofollow" target="_blank"></a></div>
+                        <script type="text/javascript"
+                            src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                            {
+                                "symbols": [{
+                                        "proName": "BITSTAMP:ETHUSD",
+                                        "title": "Ethereum"
+                                    },
+                                    {
+                                        "description": "Bitcoin",
+                                        "proName": "COINBASE:BTCUSD"
+                                    },
+                                    {
+                                        "description": "Solana",
+                                        "proName": "BINANCE:SOLUSDT"
+                                    },
+                                    {
+                                        "description": "Bnb",
+                                        "proName": "BINANCE:BNBUSDT"
+                                    },
+                                    {
+                                        "description": "Gold",
+                                        "proName": "FXOPEN:XAUUSD"
+                                    },
+                                    {
+                                        "description": "EURUSD",
+                                        "proName": "FX:EURUSD"
+                                    },
+                                    {
+                                        "description": "TSLA",
+                                        "proName": "NASDAQ:TSLA"
+                                    },
+                                    {
+                                        "description": "APPLE",
+                                        "proName": "NASDAQ:AAPL"
+                                    },
+                                    {
+                                        "description": "META",
+                                        "proName": "NASDAQ:META"
+                                    }
+                                ],
+                                "showSymbolLogo": true,
+                                "colorTheme": "light",
+                                "isTransparent": false,
+                                "displayMode": "adaptive",
+                                "locale": "en"
+                            }
+                        </script>
+                    </div>
+                    <!-- TradingView Widget END -->
+
+                    </div>
+                    
+                </div>
+                <!-- <div class="hidden md:flex h-[37px]">
+                    
+                </div> -->
+            </nav>
+        </section>
+        <section class="aboutbg">
+            <div class="flex justify-start items-center h-full w-[90%] mx-auto">
+                <div>
+                    <h1 class="text-white font-poppins tracking-tight text-3xl font-semibold">About Alpeada</h1>
+                </div>
+            </div>
+        </section>
+        <section class="w-[90%] mx-auto py-[5em]">
+            <div class="text-left space-y-7 text-gray-700 font-lato font-normal  ">
+                <p>
+                    At Alpeada, we endorse the concept of diversifying investments to provide you with a taste of passive earnings. Leveraging our onboard expertise and advanced analytical technologies, we cater to various areas, including Binary options. Our dedicated team of professionals works tirelessly around the clock to ensure optimal returns on your investment. Adhering strictly to risk management principles for consistent earnings and capital preservation, we capitalize on the best opportunities available. We firmly believe that all investors, regardless of portfolio size, deserve top-notch investment guidance.
+
+
+                </p>
+                <p>
+                    Whether you are planning a wedding, welcoming a new family member, approaching retirement, or navigating through other significant life events, we stand ready to assist everyone. Allow us to address your queries and guide you toward realizing your future vision. Our goal is to achieve high profits, minimize risks, and facilitate prompt payoffs. To accomplish this, we continually push the boundaries in foreign exchange and currency trading, incorporating innovative trading strategies for substantial profits. At Alpeada, we are committed to consistently creating value for our investors, ensuring profitability.
+                </p>
+                <p>
+                    Our objective is to mitigate risks and secure a steady, sustainable income for our investors. With the aid of rapidly advancing technologies and sophisticated computer algorithms, we explore every available option to transform your investments into possibilities that might have seemed unimaginable a decade ago. In a world that is rapidly evolving, we understand the importance of adapting to stay ahead of the curve. The future is already unfolding, and Alpeada is here to help you comprehend and capitalize on it. Let us provide you with financial support every step of the way.
+                </p>
+            </div>
+        </section>
+        <footer class="bg-white pt-[3em] ">
+            <div class=" w-[90%] mx-auto max-w-screen-xl">
+                <div class="grid grid-cols-2 gap-10 px-4 py-6 lg:py-8 md:grid-cols-4">
+                    <div class="col-span-2">
+                        <!-- <h2 class="mb-6 text-sm font-semibold text-maingrey uppercase ">Company</h2> -->
+                        <div class="flex justify-start items-center mb-6">
+                            <img src="../assets/img/alpeada-logo/vector/default-monochrome.svg" alt="" class="w-[185px] h-[60px]">
+                           
+                        </div>
+                        <div class="text-gray-500 font-normal font-lato">
+                            <span>With innovative investment tools and a collaborative trading community,eAlpeada empowers millions of users in over 140 countries to trade and invest in a simple and transparent way.</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase ">Help center</h2>
+                        <ul class="text-gray-500  font-medium font-lato">
+                            <!-- <li class="mb-4">
+                                <a href="#" class="hover:underline">Discord Server</a>
+                            </li> -->
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Twitter</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Instagram</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-maingrey uppercase ">Legal</h2>
+                        <ul class="text-gray-600  font-medium">
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Privacy Policy</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Licensing</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="text-gray-500 text-justify space-y-[1em] py-[5.5em]">
+                    <!-- <span class="text-xs text-gray-500  sm:text-center">© 2023 <a href="https://flowbite.com/">Flowbite™</a>. All Rights Reserved.
+                </span> -->
+                    <div class="text-xs tracking-tight">
+                        Alpeada (Europe) Ltd., a Financial Services Company authorised and regulated by the Cyprus
+                        Securities Exchange Commission (CySEC) under the license # 109/10.
+                        Registered in Cyprus under Company No. HE 200585. Registered Office: 4 Profiti Ilia Str., Kanika
+                        Business Centre, 7th floor, Germasogeia, 4046, Limassol, Cyprus.
+                        Alpeada (UK) Ltd, a Financial Services Company authorised and regulated by the Financial Conduct
+                        Authority (FCA) under the license FRN 583263.
+                        Registered Office: 24th floor, One Canada Square, Canary Wharf, London E14 5AB.
+                        Alpeada AUS Capital Limited is authorised by the Australian Securities and Investments
+                        Commission (ASIC) to provide financial services under Australian Financial Services License
+                        491139.
+                        Registered Office: Level 3, 60 Castlereagh Street, Sydney NSW 2000, Australia.
+                        Alpeada (Seychelles) Ltd. is licenced by the Financial Services Authority Seychelles ("FSAS") to
+                        provide broker-dealer services under the Securities Act 2007 License #SD076
+                        Registered Office: Alpeada Suites, S45 2nd Floor, Espace Building, Victoria, Seychelles.
+                    </div>
+                    <div class="text-xs tracking-tight">
+                        Past performance is not an indication of future results
+                        General Risk Disclosure | Terms & Conditions
+                    </div>
+                    <div class="text-xs tracking-tight">
+                        You should seek advice from an independent and suitably licensed financial advisor and ensure
+                        that you have the risk appetite, relevant experience and knowledge before you decide to trade.
+                        Under no circumstances shall Alpeada have any liability to any person or entity for any direct,
+                        indirect, special, consequential or incidental damages whatsoever. Cryptocurrencies markets are
+                        unregulated services which are not governed by any specific European regulatory framework
+                        (including MiFID). Therefore when using our Cryptocurrencies Trading Service you will not
+                        benefit from the protections available to clients receiving MiFID regulated investment services,
+                        such as access to the Cyprus Investor Compensation Fund (ICF)/the Financial Services
+                        Compensation Scheme (FSCS) and the Financial Ombudsman Service for dispute resolution. Trading
+                        with Alpeada by following and/or copying or replicating the trades of other traders involves a
+                        high level of risks, even when following and/or copying or replicating the top-performing
+                        traders. Such risks includes the risk that you may be following/copying the trading decisions of
+                        possibly inexperienced/unprofessional traders, or traders whose ultimate purpose or intention,
+                        or financial status may differ from yours. Past performance of an Alpeada Community Member is
+                        not a reliable indicator of his future performance. Content on Alpeada's social trading platform
+                        is generated by members of its community and does not contain advice or recommendations by or on
+                        behalf of Alpeada - Your Social Investment Network.
+                        Copyright © 2006-2023 Alpeada - Your Social Investment Network, All rights reserved.
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+        
+        </main>
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+</body>
+</html>

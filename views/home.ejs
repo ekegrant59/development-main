@@ -1,0 +1,1657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/input.css">
+    <link rel="stylesheet" href="../assets/main.css">
+    <link rel="stylesheet" href="../assets/styles.css">
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!-- remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
+    
+   
+    
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <!-- top contact bar -->
+        <div class="bg-white shadows  h-[60px] md:h-[40px] flex md:hidden  mx-auto">
+            <!-- nav bar smal screen -->
+            <div class="w-full largenav relative block md:hidden z-[999] ">
+                <div class="alpeadalogosm flex justify-center items-center h-[90%] my-auto">
+                    <img src="../assets/img/alpeada-logo/vector/default-monochrome-black.svg" class="logomini" alt="">
+                </div>
+                <div class="absolute top-[30px] left-[20px] -translate-x-[50%] -translate-y-[50%]">
+                    <div class="menubar flex items-center h-full">
+                        <button id="menuBtn"  type="button" class="inline-flex items-center  text-md text-maingrey md:hidden">
+                            <!-- <span class="sr-only">Open sidebar</span> -->
+                            <svg class="w-8 h-8" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
+                            </svg>
+                         </button>
+                    </div>
+                </div>
+                <aside id="logoSidebar" class="fixed top-0 left-0 z-[1] w-64 h-screen transition-transform -translate-x-[110%]  "> <!---translate-x-full -->
+                    
+                    <div class="h-full px-3 py-12 overflow-y-auto bg-gray-100">
+                        <div id="closeMenu" class="absolute top-[45%] -right-4 bg-gray-100 rounded-full">
+                            <img src="../assets/img/arrow-left-double-line.svg" class="w-10" alt="">
+                        </div>
+                       <a href="#" class="flex items-center ps-2.5 mb-10">
+                          <img src="../assets/img/alpeada-logo/vector/default-monochrome.svg" class="h-10 me-3 " alt="Flowbite Logo" />
+                          <!-- <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> -->
+                       </a>
+                       <ul class="space-y-4 font-medium">
+                          <li>
+                             <a href="/" class="flex items-center p-2 text-gray-900  hover:bg-gray-100 group">
+                                <img src="../assets/img/home-angle-2-svgrepo-com.svg " alt="" class="flex-shrink-0 font-bold w-5 h-5 text-gray-500 transition duration-75 " >
+                                <span class="ms-6 font-poppins whitespace-nowrap font-light">Home</span>
+                             </a>
+                          </li>
+                          <li>
+                            <a href="/about" class="flex items-center p-2 text-gray-900  hover:bg-gray-100 group">
+                               <img src="../assets/img/about-us-svgrepo-com.svg " alt="" class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 " >
+                               <span class="ms-6 font-poppins whitespace-nowrap font-light">About Alpeada</span>
+                            </a>
+                         </li>
+                         <li>
+                            <a href="/pricing" class="flex items-center p-2 text-gray-900  hover:bg-gray-100 group">
+                               <img src="../assets/img/price-tag-svgrepo-com.svg " alt="" class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 " >
+                               <span class="ms-6 font-poppins whitespace-nowrap font-light">Pricing</span>
+                            </a>
+                         </li>
+                         <li>
+                            <a href="#" class="flex items-center p-2 text-gray-900  hover:bg-gray-100 group">
+                               <img src="../assets/img/square-dollar-chart-svgrepo-com.svg" alt="" class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 " >
+                               <span class="ms-6 font-poppins whitespace-nowrap font-light">Top Markets</span>
+                            </a>
+                         </li>
+                       
+                          <li>
+                             <a href="/signup" class="flex items-center p-2 text-gray-900  group">
+                                <img src="../assets/img/sign-in-svgrepo-com.svg " alt="" class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 " >
+                             
+                                <span class="flex-1 ms-6 whitespace-nowrap font-poppins font-light">Sign In</span>
+                             </a>
+                          </li>
+                          <li>
+                             <a href="/signup" class="flex items-center p-2 text-gray-900  group">
+                                <img src="../assets/img/sign-out-svgrepo-com.svg " alt="" class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 " >
+                             
+                                <span class="flex-1 ms-6 whitespace-nowrap font-poppins font-light">Sign Up</span>
+                             </a>
+                          </li>
+                       </ul>
+                    </div>
+                 </aside>
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container pb-[-3em]">
+                    <div class="tradingview-widget-container__widget "></div>
+                    <div class="tradingview-widget-copyright bg-white"><a href="https://www.tradingview.com/"
+                            rel="noopener nofollow" target="_blank"></a></div>
+                    <script type="text/javascript"
+                        src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                        {
+                            "symbols": [{
+                                    "proName": "BITSTAMP:ETHUSD",
+                                    "title": "Ethereum"
+                                },
+                                {
+                                    "description": "Bitcoin",
+                                    "proName": "COINBASE:BTCUSD"
+                                },
+                                {
+                                    "description": "Solana",
+                                    "proName": "BINANCE:SOLUSDT"
+                                },
+                                {
+                                    "description": "Bnb",
+                                    "proName": "BINANCE:BNBUSDT"
+                                },
+                                {
+                                    "description": "Gold",
+                                    "proName": "FXOPEN:XAUUSD"
+                                },
+                                {
+                                    "description": "EURUSD",
+                                    "proName": "FX:EURUSD"
+                                },
+                                {
+                                    "description": "TSLA",
+                                    "proName": "NASDAQ:TSLA"
+                                },
+                                {
+                                    "description": "APPLE",
+                                    "proName": "NASDAQ:AAPL"
+                                },
+                                {
+                                    "description": "META",
+                                    "proName": "NASDAQ:META"
+                                }
+                            ],
+                            "showSymbolLogo": true,
+                            "colorTheme": "light",
+                            "isTransparent": false,
+                            "displayMode": "adaptive",
+                            "locale": "en"
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
+
+
+
+        </div>
+        <div class="hidden bg-maingrey  h-[60px] md:h-[40px] md:flex  mx-auto">
+            <!-- contact bar large  -->
+            <div class=" hidden md:flex justify-end items-center w-[80%] mx-auto ">
+                <div class="flex justify-end items-center text-white">
+                    <ul class="flex uppercase gap-x-11 text-[1vw] text-white">
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>
+                        <li>
+                            <a class="bg-mainlime text-maingrey px-3 py-1 rounded-lg" href="/signup">Open Account</a>
+                        </li>
+                        <li>
+                            <a href="/signup">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- navigation bar -->
+        <section>
+            <nav class="largenav hidden md:flex">
+                <!-- navigation for large screens -->
+                <div class="w-full  bg-white h-[125px] ">
+                    <div>
+                        <div class="w-full mx-auto px-[5vw]">
+                            <div class="flex justify-start items-center gap-x-[20%]">
+                                <div class="alpeadalogomd">
+                                    <img src="../assets/img/alpeada-logo/vector/default-monochrome-black.svg" class="logo"
+                                        alt="logo">
+                                </div>
+                                <div class="">
+                                    <ul class="flex gap-x-[3em] text-gray-600 font-medium  text-[1.3vw] font-lato ">
+                                        <li class="text-mainlime mainMenuItems ">
+                                            <a href="/">Home</a>
+                                        </li>
+                                        <li class="hover:text-mainlime mainMenuItems">
+                                            <a href="/about">About</a>
+                                        </li>
+                                        <li class="hover:text-mainlime mainMenuItems">
+                                            <a href="/pricing">Pricing</a>
+                                        </li>
+                                        <li class="hover:text-mainlime mainMenuItems">
+                                            <a href="#">Top Markets</a>
+                                        </li>
+                                      
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/"
+                                rel="noopener nofollow" target="_blank"></a></div>
+                        <script type="text/javascript"
+                            src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                            {
+                                "symbols": [{
+                                        "proName": "BITSTAMP:ETHUSD",
+                                        "title": "Ethereum"
+                                    },
+                                    {
+                                        "description": "Bitcoin",
+                                        "proName": "COINBASE:BTCUSD"
+                                    },
+                                    {
+                                        "description": "Solana",
+                                        "proName": "BINANCE:SOLUSDT"
+                                    },
+                                    {
+                                        "description": "Bnb",
+                                        "proName": "BINANCE:BNBUSDT"
+                                    },
+                                    {
+                                        "description": "Gold",
+                                        "proName": "FXOPEN:XAUUSD"
+                                    },
+                                    {
+                                        "description": "EURUSD",
+                                        "proName": "FX:EURUSD"
+                                    },
+                                    {
+                                        "description": "TSLA",
+                                        "proName": "NASDAQ:TSLA"
+                                    },
+                                    {
+                                        "description": "APPLE",
+                                        "proName": "NASDAQ:AAPL"
+                                    },
+                                    {
+                                        "description": "META",
+                                        "proName": "NASDAQ:META"
+                                    }
+                                ],
+                                "showSymbolLogo": true,
+                                "colorTheme": "light",
+                                "isTransparent": false,
+                                "displayMode": "adaptive",
+                                "locale": "en"
+                            }
+                        </script>
+                    </div>
+                    <!-- TradingView Widget END -->
+
+                    </div>
+                    
+                </div>
+                <!-- <div class="hidden md:flex h-[37px]">
+                    
+                </div> -->
+            </nav>
+        </section>
+        <!-- homebg -->
+        <!-- "Unlock Your Financial Potential with Precision Trading: Your Path to Prosperity Begins Here!" -->
+        <!-- "Unlock Your Financial Potential Today: Your Path to Smart Investment and Trading Starts Here!" -->
+        <!-- "Seize the Future of Wealth: Elevate Your Investments with Our Expert Trading Platform!" -->
+        <section>
+            <div class="homebackground relative">
+                <div class="flex justify-start items-center h-full">
+                    <div
+                        class="block text-white absolute left-[50%]  md:top-24 md:left-[20%] -translate-x-[50%] translate-y-[50%] md:pl-[5%] space-y-9">
+                        <div class=" hidden md:block space-y-7">
+                            <div class="space-y-4">
+                                <div>
+                                    <h1 class="font-normal text-[1.8vw]  "><span id="element2"
+                                            class="whitespace-nowrap font-lora italic text-mainlime tracking-wider"></span>
+                                    </h1>
+                                </div>
+                                <div class="heromaintext">
+                                    <p class=" font-medium text-[1.5vw] font-lato">Seize the Future of Wealth, <br> Your
+                                        Path to Smart Investment and Trading Starts today.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <a class="border-2 herobtnmain border-mainlime text-white font-semibold font-poppins tracking-wide px-6 py-2 rounded-xl text-sm"
+                                    href="/signup">Open Trading Account</a>
+                                <div>
+                                    <p class="text-[.75vw] pt-[10vw]">Trading is risky.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-4 block w-[90vw] md:hidden relative ">
+                            <div class="space-y-2">
+                                <div class="">
+                                    <h1
+                                        class="text-white  text font-extralight text-[4.6vw] tracking-wide text-center ">
+                                        <span id="element"
+                                            class="whitespace-nowrap font-lora italic text-[#FFB55C] tracking-wider"></span>
+                                    </h1>
+                                </div>
+                                <div class="herotext">
+                                    <p
+                                        class="w-full text-center font-lato tracking-wide subpixel-antialiased text-[5.5vw]">
+                                        Seize the Future of Wealth, Your Path to Smart Investment and Trading Starts
+                                        today.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <a class="herobtn border-2 border-mainlime  w-[50vw] mx-auto text-center flex justify-center items-center text-white font-semibold font-poppins px-3 py-2 rounded-xl text-sm whitespace-nowrap"
+                                    href="/signup">Open Trading Account</a>
+                                <div class="flex justify-center items-center viewport">
+                                    <p class="text-[1.75vw] pt-[17vw]">Trading is risky.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  -->
+        <section class="bg-white">
+            <div class="flex justify-center items-center mx-[10%] py-[6vh] md:py-[10vh]">
+                <div class="space-y-6">
+                    <div class="jointext text-center text-xl font-semibold text-maingrey  ">
+                        <p class="tracking-normal font-poppins uppercase">Join forces with a leading global broker and
+                            start getting more from the markets.</p>
+                    </div>
+                    <div class="jointext text-center md:text-left font-lato text-base font-medium text-gray-700">
+                        <p>Welcome to <span class="font-bold">Alpeada</span>, where cutting-edge technology meets financial prowess to redefine the landscape of digital currency trading. Our platform operates at the forefront of innovation, utilizing advanced AI bots, high-tech tools, and a sophisticated trading infrastructure to unlock unparalleled opportunities in the dynamic world of finance.</p>
+                    </div>
+                    <div class="jointext text-center md:text-left font-lato text-base font-medium text-gray-700">
+                        <p>At <span class="font-bold">Alpeada</span>, we pride ourselves on being a beacon of change in the crypto-trading sphere, breaking down barriers and creating a community accessible to all. Our team of seasoned professionals and expert traders, armed with their in-depth market knowledge, carefully monitor and optimize trading strategies to ensure a high-profit margin for our investors.</p>    
+                    </div>
+                    <div class="jointext text-center md:text-left font-lato text-base font-medium text-gray-700">
+                        <p>With friendly Customer Support, the latest technology and a range of account types, we've got
+                            everything you need to discover better trading and investments.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  -->
+        <section class="section-container">
+            <div class="fixed-background"></div>
+            <div class="bgtradertrus  content z-20 py-[50px] md:py-[80px] ">
+                <div class=" flex justify-center items-center my-[30px] mx-auto ">
+                    <h1 class="text-3xl text-center font-semibold text-white tracking-tight md:text-4xl font-poppins">
+                        Why Traders Trust <span class="text-mainlime">ALPEADA</span> </h1>
+                </div>
+                <div class="flex justify-center items-center py-[10px]">
+                    <div class="grid grid-rows-4 md:grid-rows-1 md:grid-cols-4">
+                        <!-- each box -->
+                        <div
+                            class="trustbox flex justify-center items-center border-0 bg-maingrey7 m-[5%] py-[100px] rounded-md">
+                            <div class="text-center">
+                                <div class="boxicon flex justify-center w-full py-[1em]">
+                                    <img src="../assets/img/chart.png" alt="">
+                                </div>
+                                <div>
+                                    <h1 class="text-white text-[2em] font-medium tracking-tight font-poppins ">Trading
+                                    </h1>
+                                </div>
+                                <div class="px-4 py-6">
+                                    <p
+                                        class="text-white text-[15px] md:text-[15px] md:font-normal font-lato font-light md:tracking-tight">
+                                        Access the biggest markets worldwide, with an account tailored to your needs.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of box -->
+                        <!-- each box -->
+                        <div
+                            class=" trustbox flex justify-center items-center border-0 bg-maingrey7 m-[5%] py-[100px] rounded-md ">
+                            <div class="text-center">
+                                <div class="boxicon flex justify-center w-full py-[1em]">
+                                    <img src="../assets/img/book.png" alt="">
+                                </div>
+                                <div>
+                                    <h1 class="text-white text-[2em] font-medium tracking-tight font-poppins">Knowledge
+                                    </h1>
+                                </div>
+                                <div class="px-4 py-6">
+                                    <p
+                                        class="text-white text-[15px] font-light md:text-[15px] font-lato md:font-normal md:tracking-tight">
+                                        Get daily market updates and expert analysis, explore our e-learning academy and
+                                        utilize our free trading tools, pip calculators and economic calendars outlining
+                                        high-impact events.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of box -->
+                        <!-- each box -->
+                        <div
+                            class=" trustbox flex justify-center items-center border-0 bg-maingrey7 m-[5%] py-[100px] rounded-md ">
+                            <div class="text-center">
+                                <div class="boxicon flex justify-center w-full py-[1em]">
+                                    <img src="../assets/img/clock.png" alt="">
+                                </div>
+                                <div>
+                                    <h1 class="text-white text-[2em] font-medium tracking-tight font-poppins">
+                                        Performance</h1>
+                                </div>
+                                <div class="px-4 py-6">
+                                    <p
+                                        class="text-white text-[15px] font-light md:text-[15px] font-lato md:font-normal md:tracking-tight">
+                                        Enjoy spreads from zero, lightning-fast execution and trade at the best
+                                        available prices.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of box -->
+                        <!-- each box -->
+                        <div
+                            class="trustbox flex justify-center items-center border-0 bg-maingrey7 m-[5%] py-[100px] rounded-md ">
+                            <div class="text-center ">
+                                <div class="boxicon flex justify-center w-full py-[1em]">
+                                    <img src="../assets/img/security.png" alt="">
+                                </div>
+                                <div>
+                                    <h1 class="text-white text-[2em] font-medium tracking-tight font-poppins">Safety
+                                    </h1>
+                                </div>
+                                <div class="px-4 py-6">
+                                    <p
+                                        class="text-white text-[15px] md:text-[15px] font-light font-lato md:font-normal md:tracking-tight">
+                                        As a globally regulated and licensed broker, your funds are fully segregated and
+                                        protected, meaning you can trade with total peace of mind.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of box -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white">
+            <div class="mx-auto w-[90%]">
+                <div class="">
+                    <div class="font-lato text-gray-800 text-start space-y-2 py-[4em]">
+                        <h1
+                            class="text-[2.1em] font-poppins md:text-[2.6em] font-semibold tracking-tight leading-tight">
+                            Our Platform provides all kind of investment methods</h1>
+                        <p class="text-[16px] md:text-[18px] font-source font-light tracking-tight">Embark on your investment journey with confidence through our diverse array of investment methods tailored to meet your financial goals. At Alpeada understand that one size does not fit all, which is why we offer a range of investment options to cater to various preferences and risk appetites.</p>
+                    </div>
+
+                    <div class="">
+                        <div>
+                            <div
+                                class="grid grid-cols-1 gap-y-[40px] sm:gap-y-[20px] sm:gap-x-[20px] sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
+
+                                <div class= "invstmethods bg-maingrey  border-0 rounded-2xl p-[25px] -0 boxedshadow">
+                                    <div class="relative">
+                                        <div class="my-[10px] ">
+                                            <div class="invstmethod1">
+                                                <img src="../assets/img/bitcoin.png" alt="">
+                                            </div>
+                                            <div class="space-y-3 py-4">
+                                                <h1 class="font-poppins font-medium text-[1.2em] text-mainlime">Crypto
+                                                    Asset Investment</h1>
+                                                <p class="font-source font-normal text-[.8em] text-white">Embark on a journey into the future of finance with our Crypto Asset Investment services. We offer a seamless and secure platform for individuals seeking to explore the dynamic world of cryptocurrency investments. Whether you're a seasoned investor or a newcomer to the crypto space, our user-friendly interface and expert guidance make navigating the digital asset landscape effortless.</p>
+                                            </div>
+                                        </div>
+                                        <div class="absolute  right-[20px] bottom-[-25px]">
+                                            <div class="flex items-center p-1">
+                                                <span class="text-sm text-mainlime font-poppins font-semibold">Get
+                                                    Started</span>
+                                                <i class="ri-arrow-right-s-line text-mainlime"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="invstmethods bg-maingrey  border-0 boxedshadow rounded-2xl p-[25px]">
+                                    <div class="relative">
+                                        <div class="my-[10px] ">
+                                            <div class="invstmethod1">
+                                                <img src="../assets/img/stock.png" alt="">
+                                            </div>
+                                            <div class="space-y-3 py-4">
+                                                <h1 class="font-poppins fonmedium text-[1.2em] text-mainlime">Online
+                                                    Financial Trading</h1>
+                                                <p class="font-source font-normal text-[.8em] text-white">Step into the realm of financial possibilities with our online trading platform. Tailored for the modern investor, we provide a dynamic space where users can seamlessly navigate the complexities of financial markets. Our platform empowers you with real-time market insights, enabling strategic decision-making. </p>
+                                            </div>
+                                        </div>
+                                        <div class="absolute  right-[20px] bottom-[-25px]">
+                                            <div class="flex items-center p-1">
+                                                <span class="text-sm text-mainlime font-poppins font-semibold">Get
+                                                    Started</span>
+                                                <i class="ri-arrow-right-s-line text-mainlime"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="invstmethods bg-maingrey  border-0 boxedshadow rounded-2xl p-[25px] ">
+                                    <div class="relative">
+                                        <div class="my-[10px] ">
+                                            <div class="invstmethod1">
+                                                <img src="../assets/img/house.png" alt="">
+                                            </div>
+                                            <div class="space-y-3 py-4">
+                                                <h1 class="font-poppins font-medium text-[1.2em] text-mainlime">Real
+                                                    Estate Investment</h1>
+                                                <p class="font-source font-normal text-[.8em] text-white">We believe in the transformative potential of real estate. It's not just about buying property; it's about securing your financial future. Partner with us, and let's embark on a journey of growth and prosperity through strategic real estate investments. Your success is our commitment.</p>
+                                            </div>
+                                        </div>
+                                        <div class="invstmethods absolute  right-[20px] bottom-[-30px]">
+                                            <div class="flex items-center p-1">
+                                                <span class="text-sm text-mainlime font-poppins font-semibold">Get
+                                                    Started</span>
+                                                <i class="ri-arrow-right-s-line text-mainlime"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="invstmethods bg-maingrey  border-0 boxedshadow rounded-2xl p-[25px]">
+                                    <div class="relative">
+                                        <div class="my-[10px] ">
+                                            <div class="invstmethod1">
+                                                <img src="../assets/img/renewable-energy.png" alt="">
+                                            </div>
+                                            <div class="space-y-3 py-4">
+                                                <h1 class="font-poppins font-medium text-[1.2em] text-mainlime">
+                                                    Renewable Energy</h1>
+                                                <p class="font-source font-normal text-[.8em] text-white">Join us in shaping a brighter, cleaner future through renewable energy investments. Let your money work for a sustainable tomorrow with Alpeada. By investing in renewable energy projects, you not only contribute to a cleaner, more sustainable planet but also position yourself at the forefront of a rapidly growing industry.</p>
+                                            </div>
+                                        </div>
+                                        <div class="absolute  right-[20px] bottom-[-25px]">
+                                            <div class="flex items-center p-1">
+                                                <span class="text-sm text-mainlime font-poppins font-semibold">Get
+                                                    Started</span>
+                                                <i class="ri-arrow-right-s-line text-mainlime"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="py-[5em] bg-white ">
+            <div class="py-[2em]">
+                <div
+                    class="font-poppins tracking-tight flex justify-center w-full text-3xl md:text-4xl font-bold text-center text-maingrey py-[20px]">
+                    <h1>Trusted Worldwide</h1>
+                </div>
+            </div>
+            <div class="bodyyy ">
+                <div class="slider">
+                    <div class="slide-track">
+                        <div class="slide">
+                            <img src="../assets/img/CoinGecko-logo_PNG_(1).png" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="../assets/img/cropped-MetaMask_logo_PNG_(1).png" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="../assets/img/cropped-JPMorgan_Chase_(1).png" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="../assets/img/cropped-Binance_logo_PNG_(2).png" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="../assets/img/cropped-American_Express_(10) (1).png" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="../assets/img/cropped-ING_logo_PNG_(11).png" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="../assets/img/cropped-Barclays_(11).png" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="../assets/img/cropped-HSBC_(1).png" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="../assets/img/cropped-Agricultural_Bank_of_China_logo_PNG_(1).png" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="../assets/img/cropped-AXA-Logo-PNG10.png" alt="" />
+                        </div>
+
+                        <div class="slide">
+                            <img src="../assets/img/cropped-Capital_One (10).png" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="../assets/img/cropped-Citi_logo_PNG_(10).png" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="../assets/img/Standard_Chartered_logo_PNG_(4).png" alt="" />
+                        </div>
+
+                        <div class="slide">
+                            <img src="../assets/img/cropped-Kraken_(4).png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="bg-white  relative lg:w-full mx-auto flex flex-col md:flex-row lg:items-center items-start justify-center space-y-8 md:space-x-8 md:space-y-0 md:py-6">
+            <!-- <img class="absolute top-80 md:top-40 right-10 w-20 rotate-180" src="/images/atoms/2.svg" alt=""> -->
+            <div class="relative  md:basis-full md:text-center py-10 md:py-10 px-5 md:px-10">
+                <div class="space-y-[2em]">
+                    <h1 class="text-3xl md:text-4xl text-maingrey font-poppins text-center  font-bold tracking-tight">
+                        Mirror Your Desired Expert
+                      </h1>
+                      <p class="text-base text-black my-4 md:mx-auto md:w-4/5 font-normal tracking-normal">
+                          Alpeada provides automated Mirror trading services spanning all sectors. Discover your preferred expert, connect your account to their services, and mirror their trades. Gain insights by observing trades across diverse markets and sectors, including options, derivatives, currency pairs, swing/scalp trading, cryptocurrencies, forex, and indices. We prioritize the security of clients' capital with over 90% protection through stop-loss software and indicators. At Alpeada, ensuring the safety of our clients' capital is our top priority.</p>
+                
+                      <div class="flex items-center justify-center">
+                        <div class="relative">
+                          <a href="/signup"
+                          class="bg-mainlime py-[1em] px-[2em] border-0 rounded-3xl text-maingrey font-poppins font-semibold text-sm ">Register
+                          Now</a>
+                          <!-- <div class="absolute z-10 top-1 -left-1 h-full w-full border border-black "></div> -->
+                        </div>
+                      </div>
+                </div>
+                
+          
+                <!-- STRATEGY MANAGERS -->
+                <section class="py-5 lg:w-4/5 mx-auto">
+                  <p class="text-xs text-left text-gray-400 my-4">
+                    Last Update: 00:46 GMT +02:00
+                  </p>
+                  <p class="relative text-xs text-gray-400 font-bold uppercase border-b-2 border-black w-max pb-2">
+                    Top strategy managers
+                  </p>
+                  <div class="border-b border-gray-200 w-full h-1 -mt-1"></div>
+            
+                  <!-- COLLECTIONS SECTION -->
+                  <section class="my-4 space-y-4">
+                    <!-- COLLECTIONS HEADER -->
+                    <div class="flex items-center justify-between uppercase font-bold text-xs text-gray-400">
+                      <p>Trader</p>
+                      <p>Managed Funds</p>
+                    </div>
+            
+                    <!-- COLLECTIONS -->
+                    <section>
+                      <a href="/signup" class="copytrader flex justify-between hover:bg-gray-50 cursor-pointer py-4">
+                        <!-- BOOK DETAILS -->
+                        <div class="flex items-center space-x-3 md:space-x-4">
+                          <p class="font-black font-grotesque text-lg text-gray-500">1</p>
+                          <div class="flex items-center space-x-2">
+                            <div class="">
+                              <img class="object-cover w-12 h-12 rounded-full shadow-md" src="../assets/img/traders/avatar4.jpeg" alt="Winona A">
+                            </div>
+            
+                            <div class="text-left">
+                              <h1 class="flex items-center font-bold text-sm text-gray-800">
+                                Jeremy E. Johnson
+                              </h1>
+                              <p class="font-semibold text-xs text-gray-400">jeremy</p>
+                            </div>
+                          </div>
+                        </div>
+            
+                        <!-- VOLUME -->
+                        <div class="flex items-center space-x-2">
+                          <p class="flex items-center font-medium text-xs text-green-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 mr-1">
+                              <path fill-rule="evenodd" d="M11.47 2.47a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06l-6.22-6.22V21a.75.75 0 01-1.5 0V4.81l-6.22 6.22a.75.75 0 11-1.06-1.06l7.5-7.5z" clip-rule="evenodd"></path>
+                            </svg>
+                            +230%
+                          </p>
+                          <p class="font-bold font-grotesque text-lg text-black">
+                            $5,626,178
+                          </p>
+                        </div>
+                      </a>
+            
+                      <a href="/signup" class="copytrader flex justify-between hover:bg-gray-50 cursor-pointer py-4">
+                        <!-- BOOK DETAILS -->
+                        <div class="flex items-center space-x-3 md:space-x-4">
+                          <p class="font-black font-grotesque text-lg text-gray-500">2</p>
+                          <div class="flex items-center space-x-2">
+                            <div class="">
+                              <img class="object-cover w-12 h-12 rounded-full shadow-md" src="../assets/img/traders/avatar3.jpg" alt="Book 1">
+                            </div>
+            
+                            <div class="text-left">
+                              <h1 class="flex items-center font-bold text-sm text-gray-800">
+                                Crypto John
+                              </h1>
+                              <p class="font-semibold text-xs text-gray-400">Cryj63548</p>
+                            </div>
+                          </div>
+                        </div>
+            
+                        <!-- VOLUME -->
+                        <div class="flex items-center space-x-2">
+                          <p class="flex items-center font-medium text-xs text-green-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 mr-1">
+                              <path fill-rule="evenodd" d="M11.47 2.47a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06l-6.22-6.22V21a.75.75 0 01-1.5 0V4.81l-6.22 6.22a.75.75 0 11-1.06-1.06l7.5-7.5z" clip-rule="evenodd"></path>
+                            </svg>
+                            +14.99%
+                          </p>
+                          <p class="font-bold font-grotesque text-lg text-black">
+                            $4,132,105
+                          </p>
+                        </div>
+                      </a>
+            
+                      <a href="/signup" class="copytrader flex justify-between hover:bg-gray-50 cursor-pointer py-4">
+                        <!-- BOOK DETAILS -->
+                        <div class="flex items-center space-x-3 md:space-x-4">
+                          <p class="font-black font-grotesque text-lg text-gray-500">3</p>
+                          <div class="flex items-center space-x-2">
+                            <div class="">
+                              <img class="object-cover w-12 h-12 rounded-full shadow-md" src="../assets/img/traders/avatar2.jpg" alt="Book 2">
+                            </div>
+            
+                            <div class="text-left">
+                              <h1 class="flex items-center font-bold text-sm text-gray-800">
+                                Matthew Giannino
+                              </h1>
+                              <p class="font-semibold text-xs text-gray-400">MAthFX</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- VOLUME -->
+                        <div class="flex items-center space-x-2">
+                          <p class="flex items-center font-medium text-xs text-green-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 mr-1">
+                              <path fill-rule="evenodd" d="M11.47 2.47a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06l-6.22-6.22V21a.75.75 0 01-1.5 0V4.81l-6.22 6.22a.75.75 0 11-1.06-1.06l7.5-7.5z" clip-rule="evenodd"></path>
+                            </svg>
+                            +13.89%
+                          </p>
+                          <p class="font-bold font-grotesque text-lg text-black">
+                            $2,482,600
+                          </p>
+                        </div>
+                      </a>
+            
+                      <a href="/signup" class="copytrader flex justify-between hover:bg-gray-50 cursor-pointer py-4">
+                        <!-- BOOK DETAILS -->
+                        <div class="flex items-center space-x-3 md:space-x-4">
+                          <p class="font-black font-grotesque text-lg text-gray-500">4</p>
+                          <div class="flex items-center space-x-2">
+                            <div class="">
+                              <img class="object-cover w-12 h-12 rounded-full shadow-md" src="../assets/img/traders/avatar1.jpeg" alt="Book 2">
+                            </div>
+            
+                            <div class="text-left">
+                              <h1 class="flex items-center font-bold text-sm text-gray-800">
+                                Amelia Beryl
+                              </h1>
+                              <p class="font-semibold text-xs text-gray-400">ChocolateFx</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- VOLUME -->
+                        <div class="flex items-center space-x-2">
+                          <p class="flex items-center font-medium text-xs text-green-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 mr-1">
+                              <path fill-rule="evenodd" d="M11.47 2.47a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06l-6.22-6.22V21a.75.75 0 01-1.5 0V4.81l-6.22 6.22a.75.75 0 11-1.06-1.06l7.5-7.5z" clip-rule="evenodd"></path>
+                            </svg>
+            
+                            18.24%
+                          </p>
+                          <p class="font-bold font-grotesque text-lg text-black">
+                            $1,560,450
+                          </p>
+                        </div>
+                      </a>
+            
+                      <a href="/signup" class="copytrader flex justify-between hover:bg-gray-50 cursor-pointer py-4">
+                        <!-- BOOK DETAILS -->
+                        <div class="flex items-center space-x-3 md:space-x-4">
+                          <p class="font-black font-grotesque text-lg text-gray-500">5</p>
+                          <div class="flex items-center space-x-2">
+                            <div class="">
+                              <img class="object-cover w-12 h-12 rounded-full shadow-md" src="../assets/img/traders/avatar5.jpg" alt="Jordan">
+                            </div>
+            
+                            <div class="text-left">
+                              <h1 class="flex items-center font-bold text-sm text-gray-800">
+                                Jordan Archer
+                              </h1>
+                              <p class="font-semibold text-xs text-gray-400">JordanChase</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- VOLUME -->
+                        <div class="flex items-center space-x-2">
+                          <p class="flex items-center font-medium text-xs text-green-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 mr-1">
+                              <path fill-rule="evenodd" d="M11.47 2.47a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06l-6.22-6.22V21a.75.75 0 01-1.5 0V4.81l-6.22 6.22a.75.75 0 11-1.06-1.06l7.5-7.5z" clip-rule="evenodd"></path>
+                            </svg>
+            
+                            9.65%
+                          </p>
+                          <p class="font-bold font-grotesque text-lg text-black">
+                            $963,162
+                          </p>
+                        </div>
+                      </a>
+            
+                      <a href="/signup" class="copytrader flex justify-between hover:bg-gray-50 cursor-pointer py-4">
+                        <!-- BOOK DETAILS -->
+                        <div class="flex items-center space-x-3 md:space-x-4">
+                          <p class="font-black font-grotesque text-lg text-gray-500">6</p>
+                          <div class="flex items-center space-x-2">
+                            <div class="">
+                              <img class="object-cover w-12 h-12 rounded-full shadow-md" src="../assets/img/traders/avatar6.jpg" alt="Logan Smith">
+                            </div>
+            
+                            <div class="text-left">
+                              <h1 class="flex items-center font-bold text-sm text-gray-800">
+                                Logan Smith
+                              </h1>
+                              <p class="font-semibold text-xs text-gray-400">ShareProfit</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- VOLUME -->
+                        <div class="flex items-center space-x-2">
+                          <p class="flex items-center font-medium text-xs text-green-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 mr-1">
+                              <path fill-rule="evenodd" d="M11.47 2.47a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06l-6.22-6.22V21a.75.75 0 01-1.5 0V4.81l-6.22 6.22a.75.75 0 11-1.06-1.06l7.5-7.5z" clip-rule="evenodd"></path>
+                            </svg>
+            
+                            9.69%
+                          </p>
+                          <p class="font-bold font-grotesque text-lg text-black">
+                            $517, 000
+                          </p>
+                        </div>
+                      </a>
+            
+                      <a href="/signup" class="copytrader flex justify-between hover:bg-gray-50 cursor-pointer py-4">
+                        <!-- BOOK DETAILS -->
+                        <div class="flex items-center space-x-3 md:space-x-4">
+                          <p class="font-black font-grotesque text-lg text-gray-500">7</p>
+                          <div class="flex items-center space-x-2">
+                            <div class="">
+                              <img class="object-cover w-12 h-12 rounded-full shadow-md" src="../assets/img/traders/avatar7.jpeg" alt="Logan Smith">
+                            </div>
+            
+                            <div class="text-left">
+                              <h1 class="flex items-center font-bold text-sm text-gray-800">
+                                James Harrison
+                              </h1>
+                              <p class="font-semibold text-xs text-gray-400">
+                                Tradewithjames
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- VOLUME -->
+                        <div class="flex items-center space-x-2">
+                          <p class="flex items-center font-medium text-xs text-green-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 mr-1">
+                              <path fill-rule="evenodd" d="M11.47 2.47a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06l-6.22-6.22V21a.75.75 0 01-1.5 0V4.81l-6.22 6.22a.75.75 0 11-1.06-1.06l7.5-7.5z" clip-rule="evenodd"></path>
+                            </svg>
+            
+                            7.72%
+                          </p>
+                          <p class="font-bold font-grotesque text-lg text-black">
+                            $492, 000
+                          </p>
+                        </div>
+                      </a>
+            
+                      <a href="/signup" class="copytrader flex justify-between hover:bg-gray-50 cursor-pointer py-4">
+                        <!-- BOOK DETAILS -->
+                        <div class="flex items-center space-x-3 md:space-x-4">
+                          <p class="font-black font-grotesque text-lg text-gray-500">8</p>
+                          <div class="flex items-center space-x-2">
+                            <div class="">
+                              <img class="object-cover w-12 h-12 rounded-full shadow-md" src="../assets/img/traders/avatar8.jpg" alt="Logan Smith">
+                            </div>
+            
+                            <div class="text-left">
+                              <h1 class="flex items-center font-bold text-sm text-gray-800">
+                                Victor Cordeiro
+                              </h1>
+                              <p class="font-semibold text-xs text-gray-400">Cordeirofx</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- VOLUME -->
+                        <div class="flex items-center space-x-2">
+                          <p class="flex items-center font-medium text-xs text-green-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 mr-1">
+                              <path fill-rule="evenodd" d="M11.47 2.47a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06l-6.22-6.22V21a.75.75 0 01-1.5 0V4.81l-6.22 6.22a.75.75 0 11-1.06-1.06l7.5-7.5z" clip-rule="evenodd"></path>
+                            </svg>
+            
+                            5.69%
+                          </p>
+                          <p class="font-bold font-grotesque text-lg text-black">
+                            $412, 000
+                          </p>
+                        </div>
+                      </a>
+                    </section>
+                  </section>
+                </section>
+              </div>
+          
+          
+            </section>
+        <section>
+            <div class="bg-maingrey">
+                <div class="pt-[30px] block md:flex">
+                    <div class="mx-[6%] space-y-5">
+                        <div
+                            class="text-center tracking-tight text-[2.2em] md:text-[3em] text-white font-semibold font-poppins leading-snug">
+                            <h1>Get our World Class <br> <span class="text-mainlime">Automated Trading Bot</span> </h1>
+                        </div>
+                        <div class="text-center text-white font-light text-[14px] font-base font-lato ">
+                            <p>Become a better trader. Powerful, AI-powered trading bot to help you save time, trade
+                                24/7, and automate your trading.</p>
+                        </div>
+                        <div class="flex justify-center">
+                            <a href="/signup"
+                                class="text-center bg-mainlime px-7 py-2 rounded-lg text-maingrey font-poppins text-sm font-semibold font-poppins font-semibold">Open
+                                Account</a>
+                        </div>
+                    </div>
+                    <div class="tradingbot">
+                        <img src="../assets/img/homepage-open-demo-acc_phone.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="bg-gray-100">
+                <div class=" w-[90%] mx-auto py-[4em]">
+                    <div
+                        class="font-poppins tracking-tight flex justify-center w-full text-[1.5em] font-semibold text-center text-maingrey ">
+                        <h1>Choose your account type and <br> build your portfolio today!</h1>
+                    </div>
+                    <div>
+                        <!-- steps to account trading -->
+                        <div>
+                            <div class="flex justify-center">
+                                <div class="space-y-[1.1em] py-[20px]">
+                                    <div class="flex gap-x-3">
+                                        <div class="numbering">
+                                            <img src="../assets/img/number-1.png" alt="">
+                                        </div>
+                                        <div>
+                                            <span
+                                                class="text-[1em] font-lato font-normal text-maingrey text-left ">Complete
+                                                the registration form</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex  gap-x-3">
+                                        <div class="numbering">
+                                            <img src="../assets/img/number-2.png" alt="">
+                                        </div>
+                                        <div>
+                                            <span
+                                                class="text-[1em] font-lato font-normal text-maingrey text-left  ">Choose
+                                                the right account to suit your trading needs</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-x-3">
+                                        <div class="numbering">
+                                            <img src="../assets/img/number-3.png" alt="">
+                                        </div>
+                                        <div>
+                                            <span
+                                                class="text-[1em] font-lato font-normal text-maingrey text-center  ">Verify
+                                                your new profile</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex  gap-x-3">
+                                        <div class="numbering">
+                                            <img src="../assets/img/number-4.png" alt="">
+                                        </div>
+                                        <div>
+                                            <span
+                                                class="text-[1em] font-lato font-normal text-maingrey text-center  ">Fund
+                                                your account, invest and start trading</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex  gap-x-3">
+                                        <div class="numbering">
+                                            <img src="../assets/img/number-5.png" alt="">
+                                        </div>
+                                        <div>
+                                            <span
+                                                class="text-[1em] font-lato font-normal text-maingrey text-center  ">Withdraw Profits!</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="flex justify-center py-[20px]">
+                                <a href="/signup"
+                                    class="bg-mainlime py-[1em] px-[2em] border-0 rounded-3xl text-maingrey font-poppins font-semibold text-sm ">Register
+                                    Now</a>
+                            </div>
+                            <div class="minus flex justify-center py-[20px]">
+                                <img src="../assets/img/minus.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- account types -->
+                    <div class="grid grid-cols-1 space-y-4 ">
+
+                        <div
+                            class="font-poppins tracking-tight flex justify-center w-full text-[2em] font-bold text-center text-maingrey py-[20px]">
+                            <h1>Choose your Account type</h1>
+                        </div>
+
+                        <section class=" grid grid-cols-1 md:grid-cols-3 gap-y-[2.5em] md:gap-y-0 md:gap-x-[2.5em]">
+
+                            <!-- each account type -->
+                            <section class="acctype">
+                                <div class="border-[1px] border-maingrey rounded-xl p-[2em] ">
+                                    <div class="space-y-3">
+                                        <div>
+                                            <h1
+                                                class="font-poppins font-semibold text-[1.4em] text-maingrey tracking-wide">
+                                                Classic Account</h1>
+                                        </div>
+                                       
+                                        <div>
+                                            <a href="/signup"
+                                            class="bg-mainlime py-[.5em] px-[1em] border-0 rounded-3xl text-maingrey font-poppins font-normal text-sm ">Get Started</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="minus flex justify-center py-[30px]">
+                                        <img src="../assets/img/minus.png" alt="">
+                                    </div>
+
+                                    <div>
+                                        <div class="flex justify-start">
+                                            <div class="space-y-[1.1em] ">
+                                                <div class="flex gap-x-3">
+                                                    <div class="numbering">
+                                                        <img src="../assets/img/checked.png" alt=""> </div>
+                                                    <div>
+                                                        <span
+                                                            class="text-[.9em] font-light font-poppins text-maingrey text-left ">Up
+                                                            to 1:300 Leverage</span>
+                                                    </div>
+                                                </div>
+                                                <div class="flex  gap-x-3">
+                                                    <div class="numbering">
+                                                        <img src="../assets/img/checked.png" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <span
+                                                            class="text-[.9em] font-light font-poppins text-maingrey text-left  ">
+                                                            3.9% Daily Estimated Returns</span>
+                                                    </div>
+                                                </div>
+                                                <div class="flex gap-x-3">
+                                                    <div class="numbering">
+                                                        <img src="../assets/img/checked.png" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <span
+                                                            class="text-[.9em] font-light font-poppins text-maingrey text-center  ">2.5%
+                                                            Referal Bonus</span>
+                                                    </div>
+                                                </div>
+                                                <div class="flex  gap-x-3">
+                                                    <div class="numbering">
+                                                        <img src="../assets/img/checked.png" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <span
+                                                            class="text-[.9em] font-light font-poppins text-maingrey text-center  "><span class="font-semibold">$250</span> 
+                                                            Minimum Deposit</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- end of account type -->
+
+                            <!-- each account type -->
+                            <section class="acctype">
+                                <div class="border-[1px] border-maingrey rounded-xl p-[2em] ">
+
+                                    <div class="space-y-3">
+                                        <div>
+                                            <h1
+                                                class="font-poppins font-semibold text-[1.4em] text-maingrey tracking-wide">
+                                                Pro Account</h1>
+                                        </div>
+                                        
+                                        <div>
+                                            <a href="/signup"
+                                            class="bg-mainlime py-[.5em] px-[1em] border-0 rounded-3xl text-maingrey font-poppins font-normal text-sm ">Get Started</a>
+                                        
+                                        </div>
+                                    </div>
+
+                                    <div class="minus flex justify-center py-[30px]">
+                                        <img src="../assets/img/minus.png" alt="">
+                                    </div>
+
+                                    <div>
+                                        <div class="flex justify-start">
+                                            <div class="space-y-[1.1em] ">
+                                                <div class="flex gap-x-3">
+                                                    <div class="numbering">
+                                                        <img src="../assets/img/checked.png" alt=""> </div>
+                                                    <div>
+                                                        <span
+                                                            class="text-[.9em] font-light font-poppins text-maingrey text-left ">Up
+                                                            to 1:900 Leverage</span>
+                                                    </div>
+                                                </div>
+                                                <div class="flex  gap-x-3">
+                                                    <div class="numbering">
+                                                        <img src="../assets/img/checked.png" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <span
+                                                            class="text-[.9em] font-light font-poppins text-maingrey text-left  ">5.4% Daily Estimated Returns</span>
+                                                    </div>
+                                                </div>
+                                                <div class="flex gap-x-3">
+                                                    <div class="numbering">
+                                                        <img src="../assets/img/checked.png" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <span
+                                                            class="text-[.9em] font-light font-poppins text-maingrey text-center  ">2.5%
+                                                            Referal Bonus</span>
+                                                    </div>
+                                                </div>
+                                                <div class="flex  gap-x-3">
+                                                    <div class="numbering">
+                                                        <img src="../assets/img/checked.png" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <span
+                                                            class="text-[.9em] font-light font-poppins text-maingrey text-center  "><span class="font-semibold">$5,000</span>
+                                                            Minimum Deposit</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- end of account type -->
+                            <!-- each account type -->
+                            <section class="acctype">
+                                <div class="border-[1px] border-maingrey rounded-xl p-[2em] ">
+
+                                    <div class="space-y-3">
+                                        <div>
+                                            <h1
+                                                class="font-poppins font-semibold text-[1.4em] text-maingrey tracking-wide">
+                                                Elite Account</h1>
+                                        </div>
+                                      
+                                        <div>
+                                            <a href="/signup"
+                                            class="bg-mainlime py-[.5em] px-[1em] border-0 rounded-3xl text-maingrey font-poppins font-normal text-sm ">Get Started</a>
+                                        
+                                        </div>
+                                    </div>
+
+                                    <div class="minus flex justify-center py-[30px]">
+                                        <img src="../assets/img/minus.png" alt="">
+                                    </div>
+
+                                    <div>
+                                        <div class="flex justify-start">
+                                            <div class="space-y-[1.1em] ">
+                                                <div class="flex gap-x-3">
+                                                    <div class="numbering">
+                                                        <img src="../assets/img/checked.png" alt=""> </div>
+                                                    <div>
+                                                        <span
+                                                            class="text-[.9em] font-light font-poppins text-maingrey text-left ">Up
+                                                            to 1:1200 Leverage</span>
+                                                    </div>
+                                                </div>
+                                                <div class="flex  gap-x-3">
+                                                    <div class="numbering">
+                                                        <img src="../assets/img/checked.png" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <span
+                                                            class="text-[.9em] font-light font-poppins text-maingrey text-left  ">8.5% Daily Estimated Returns</span>
+                                                    </div>
+                                                </div>
+                                                <div class="flex gap-x-3">
+                                                    <div class="numbering">
+                                                        <img src="../assets/img/checked.png" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <span
+                                                            class="text-[.9em] font-light font-poppins text-maingrey text-center  ">2.5%
+                                                            Referal Bonus</span>
+                                                    </div>
+                                                </div>
+                                                <div class="flex  gap-x-3">
+                                                    <div class="numbering">
+                                                        <img src="../assets/img/checked.png" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <span
+                                                            class="text-[.9em] font-light font-poppins text-maingrey text-center  "><span class="font-semibold">$75,000</span>
+                                                            Minimum Deposit</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- end of account type -->
+
+                        </section>
+
+                    </div>
+                </div>
+        </section>
+        <section class="bg-white py-[3em]">
+            <div class="text-center space-y-[10px] py-[2em]">
+                <div
+                    class=" flex justify-center w-[70px] mx-auto bg-gray-100 border-2 border-gray-300 px-2 py-1 rounded-3xl">
+                    <span class="font-lato text-sm">FAQ's</span>
+                </div>
+                <div
+                    class="font-poppins tracking-tight flex justify-center w-full text-[2em] font-bold text-center text-maingrey ">
+                    <h1>Quick Answers</h1>
+                </div>
+            </div>
+            <div class="flex justify-center w-[90%] mx-auto">
+                <div>
+
+                </div>
+                <div id="accordion-collapse" data-accordion="collapse">
+                    <h2 id="accordion-collapse-heading-1">
+                        <button type="button"
+                            class="flex items-center justify-between w-full p-5 font-light text-[1em] text-left text-maingrey border border-b-0 border-maingrey rounded-t-xl hover:bg-gray-100 "
+                            data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+                            aria-controls="accordion-collapse-body-1">
+                            <span class="text-maingrey font-poppins">What is Alpeada and how does it work?</span>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M9 5 5 1 1 5" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+                        <div class="p-5 border border-b-0 border-maingrey ">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Alpeada is a financial trading service that leverages cutting-edge technology and expert analysis to optimize investment strategies. Our platform allows users to invest in various financial markets, including stocks, cryptocurrencies, and commodities, with the assistance of advanced algorithms and professional insights.</p>
+                            
+                        </div>
+                    </div>
+
+
+                    <h2 id="accordion-collapse-heading-2">
+                        <button type="button"
+                            class="flex items-center justify-between w-full p-5 font-light text-[1em] text-left text-maingrey border border-b-0 border-maingrey  hover:bg-gray-100 "
+                            data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
+                            aria-controls="accordion-collapse-body-2">
+                            <span class="text-maingrey font-poppins">How do I get started with Alpeada?</span>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M9 5 5 1 1 5" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+                        <div class="p-5 border border-b-0 border-maingrey">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Getting started is easy! Simply sign up on our website, create an account, and follow the step-by-step instructions to link your preferred trading account. Once your account is set up, you can explore our investment opportunities and choose a strategy that aligns with your financial goals.</p>
+                            
+                        </div>
+                    </div>
+
+                    <h2 id="accordion-collapse-heading-3">
+                        <button type="button"
+                            class="flex items-center justify-between w-full p-5 font-light text-[1em] text-left text-maingrey border border-b-0 border-maingrey  hover:bg-gray-100 "
+                            data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
+                            aria-controls="accordion-collapse-body-3">
+                            <span class="text-maingrey font-poppins"> What types of investments does Alpeada offer?</span>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M9 5 5 1 1 5" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+                        <div class="p-5 border border-b-0 border-maingrey">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Alpeada provides a diverse range of investment options, including stocks, forex, cryptocurrencies, and commodities. Our platform caters to various trading preferences, from long-term investments to more active trading strategies.</p>
+                            
+                        </div>
+                    </div>
+
+
+                    <h2 id="accordion-collapse-heading-4">
+                        <button type="button"
+                            class="flex items-center justify-between w-full p-5 font-light text-[1em] text-left text-maingrey border border-maingrey  hover:bg-gray-100 "
+                            data-accordion-target="#accordion-collapse-body-4" aria-expanded="false"
+                            aria-controls="accordion-collapse-body-4">
+                            <span class="text-maingrey font-poppins">How is my investment portfolio managed on Alpeada?</span>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M9 5 5 1 1 5" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-collapse-body-4" class="hidden" aria-labelledby="accordion-collapse-heading-4">
+                        <div class="p-5 border border-b-0 border-maingrey">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Your investment portfolio is managed through a combination of AI-driven algorithms and the expertise of our professional traders. These tools work together to analyze market trends, execute trades, and optimize your portfolio for the best possible returns.
+
+                            </p>
+                        
+                        </div>
+                    </div>
+
+                    <h2 id="accordion-collapse-heading-5">
+                        <button type="button"
+                            class="flex items-center justify-between w-full p-5 font-light text-[1em] text-left text-maingrey border border-maingrey  hover:bg-gray-100 "
+                            data-accordion-target="#accordion-collapse-body-5" aria-expanded="false"
+                            aria-controls="accordion-collapse-body-5">
+                            <span class="text-maingrey font-poppins">What level of risk is associated with using Alpeada?</span>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M9 5 5 1 1 5" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-collapse-body-5" class="hidden" aria-labelledby="accordion-collapse-heading-5">
+                        <div class="p-5 border border-b-0 border-maingrey">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">All investments carry inherent risks, and trading in financial markets involves uncertainties. However, Alpeada is designed to minimize risks through careful analysis, risk management tools, and the expertise of our team. We encourage users to diversify their portfolios to mitigate potential risks.
+                            </p>
+                        
+                        </div>
+                    </div>
+
+                    <h2 id="accordion-collapse-heading-6">
+                        <button type="button"
+                            class="flex items-center justify-between w-full p-5 font-light text-[1em] text-left text-maingrey border border-maingrey  hover:bg-gray-100 "
+                            data-accordion-target="#accordion-collapse-body-6" aria-expanded="false"
+                            aria-controls="accordion-collapse-body-6">
+                            <span class="text-maingrey font-poppins">Can I withdraw my funds at any time?</span>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M9 5 5 1 1 5" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-collapse-body-6" class="hidden" aria-labelledby="accordion-collapse-heading-6">
+                        <div class="p-5 border border-b-0 border-maingrey">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Yes, you have the flexibility to withdraw your funds at any time. Simply log in to your account, navigate to the withdrawal section, and follow the prompts. Keep in mind that withdrawal processing times may vary depending on your chosen payment method.
+                            </p>
+                        
+                        </div>
+                    </div>
+
+                    <h2 id="accordion-collapse-heading-7">
+                        <button type="button"
+                            class="flex items-center justify-between w-full p-5 font-light text-[1em] text-left text-maingrey border border-maingrey  hover:bg-gray-100 "
+                            data-accordion-target="#accordion-collapse-body-7" aria-expanded="false"
+                            aria-controls="accordion-collapse-body-7">
+                            <span class="text-maingrey font-poppins"> How secure is my financial information on Alpeada?</span>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M9 5 5 1 1 5" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-collapse-body-7" class="hidden" aria-labelledby="accordion-collapse-heading-7">
+                        <div class="p-5 border border-b-0 border-maingrey">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Ensuring the security of your financial information is our top priority. Alpeada employs industry-standard encryption protocols and follows stringent security measures to safeguard your personal and financial data.
+                            </p>
+                        
+                        </div>
+                    </div>
+
+                    <h2 id="accordion-collapse-heading-8">
+                        <button type="button"
+                            class="flex items-center justify-between w-full p-5 font-light text-[1em] text-left text-maingrey border border-maingrey  hover:bg-gray-100 "
+                            data-accordion-target="#accordion-collapse-body-8" aria-expanded="false"
+                            aria-controls="accordion-collapse-body-8">
+                            <span class="text-maingrey font-poppins">How can I track the performance of my investments on Alpeada?</span>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M9 5 5 1 1 5" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-collapse-body-8" class="hidden" aria-labelledby="accordion-collapse-heading-8">
+                        <div class="p-5 border border-b-0 border-maingrey">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">You can easily monitor the performance of your investments by logging into your account. Our platform provides real-time updates on your portfolio, including current holdings, transaction history, and performance metrics.
+                            </p>
+                        
+                        </div>
+                    </div>
+
+
+                    <h2 id="accordion-collapse-heading-9">
+                        <button type="button"
+                            class="flex items-center justify-between w-full p-5 font-light text-[1em] text-left text-maingrey border border-maingrey  hover:bg-gray-100 "
+                            data-accordion-target="#accordion-collapse-body-9" aria-expanded="false"
+                            aria-controls="accordion-collapse-body-9">
+                            <span class="text-maingrey font-poppins">Is customer support available if I have questions or concerns?</span>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M9 5 5 1 1 5" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-collapse-body-9" class="hidden" aria-labelledby="accordion-collapse-heading-9">
+                        <div class="p-5 border border-b-0 border-maingrey">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400"> Absolutely! Our customer support team is available to assist you with any questions or concerns you may have. You can reach out to us through the contact form on our website, email, or live chat during business hours. We're here to support your investment journey.
+
+                            </p>
+                        
+                        </div>
+                    </div>
+
+
+                    <h2 id="accordion-collapse-heading-10">
+                        <button type="button"
+                            class="flex items-center justify-between w-full p-5 font-light text-[1em] text-left text-maingrey border border-maingrey  hover:bg-gray-100 "
+                            data-accordion-target="#accordion-collapse-body-10" aria-expanded="false"
+                            aria-controls="accordion-collapse-body-10">
+                            <span class="text-maingrey font-poppins"> How does Alpeada ensure transparency in its operations?</span>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M9 5 5 1 1 5" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-collapse-body-10" class="hidden" aria-labelledby="accordion-collapse-heading-10">
+                        <div class="p-5 border border-t-0 border-maingrey">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400"> Transparency is a core value at Alpeada. We provide regular updates on your portfolio performance, transaction history, and market analyses. Additionally, our customer support team is available to address any queries you may have regarding your investments.
+
+                            </p>
+                        
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <footer class="bg-white pt-[3em] ">
+            <div class=" w-[90%] mx-auto max-w-screen-xl">
+                <div class="grid grid-cols-2 gap-10 px-4 py-6 lg:py-8 md:grid-cols-4">
+                    <div class="col-span-2">
+                        <!-- <h2 class="mb-6 text-sm font-semibold text-maingrey uppercase ">Company</h2> -->
+                        <div class="flex justify-start items-center mb-6">
+                            <img src="../assets/img/alpeada-logo/vector/default-monochrome.svg" alt="" class="w-[185px] h-[60px]">
+                           
+                        </div>
+                        <div class="text-gray-500 font-normal font-lato">
+                            <span>With innovative investment tools and a collaborative trading community,eAlpeada empowers millions of users in over 140 countries to trade and invest in a simple and transparent way.</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase ">Help center</h2>
+                        <ul class="text-gray-500  font-medium font-lato">
+                            <!-- <li class="mb-4">
+                                <a href="#" class="hover:underline">Discord Server</a>
+                            </li> -->
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Twitter</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Instagram</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-maingrey uppercase ">Legal</h2>
+                        <ul class="text-gray-600  font-medium">
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Privacy Policy</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Licensing</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="text-gray-500 text-justify space-y-[1em] py-[5.5em]">
+                    <!-- <span class="text-xs text-gray-500  sm:text-center">© 2023 <a href="https://flowbite.com/">Flowbite™</a>. All Rights Reserved.
+                </span> -->
+                    <div class="text-xs tracking-tight">
+                        Alpeada (Europe) Ltd., a Financial Services Company authorised and regulated by the Cyprus
+                        Securities Exchange Commission (CySEC) under the license # 109/10.
+                        Registered in Cyprus under Company No. HE 200585. Registered Office: 4 Profiti Ilia Str., Kanika
+                        Business Centre, 7th floor, Germasogeia, 4046, Limassol, Cyprus.
+                        Alpeada (UK) Ltd, a Financial Services Company authorised and regulated by the Financial Conduct
+                        Authority (FCA) under the license FRN 583263.
+                        Registered Office: 24th floor, One Canada Square, Canary Wharf, London E14 5AB.
+                        Alpeada AUS Capital Limited is authorised by the Australian Securities and Investments
+                        Commission (ASIC) to provide financial services under Australian Financial Services License
+                        491139.
+                        Registered Office: Level 3, 60 Castlereagh Street, Sydney NSW 2000, Australia.
+                        Alpeada (Seychelles) Ltd. is licenced by the Financial Services Authority Seychelles ("FSAS") to
+                        provide broker-dealer services under the Securities Act 2007 License #SD076
+                        Registered Office: Alpeada Suites, S45 2nd Floor, Espace Building, Victoria, Seychelles.
+                    </div>
+                    <div class="text-xs tracking-tight">
+                        Past performance is not an indication of future results
+                        General Risk Disclosure | Terms & Conditions
+                    </div>
+                    <div class="text-xs tracking-tight">
+                        You should seek advice from an independent and suitably licensed financial advisor and ensure
+                        that you have the risk appetite, relevant experience and knowledge before you decide to trade.
+                        Under no circumstances shall Alpeada have any liability to any person or entity for any direct,
+                        indirect, special, consequential or incidental damages whatsoever. Cryptocurrencies markets are
+                        unregulated services which are not governed by any specific European regulatory framework
+                        (including MiFID). Therefore when using our Cryptocurrencies Trading Service you will not
+                        benefit from the protections available to clients receiving MiFID regulated investment services,
+                        such as access to the Cyprus Investor Compensation Fund (ICF)/the Financial Services
+                        Compensation Scheme (FSCS) and the Financial Ombudsman Service for dispute resolution. Trading
+                        with Alpeada by following and/or copying or replicating the trades of other traders involves a
+                        high level of risks, even when following and/or copying or replicating the top-performing
+                        traders. Such risks includes the risk that you may be following/copying the trading decisions of
+                        possibly inexperienced/unprofessional traders, or traders whose ultimate purpose or intention,
+                        or financial status may differ from yours. Past performance of an Alpeada Community Member is
+                        not a reliable indicator of his future performance. Content on Alpeada's social trading platform
+                        is generated by members of its community and does not contain advice or recommendations by or on
+                        behalf of Alpeada - Your Social Investment Network.
+                        Copyright © 2006-2023 Alpeada - Your Social Investment Network, All rights reserved.
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+    <script>
+
+// Function to fetch the current BTC price
+async function getBTCPrice() {
+  try {
+    const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd');
+    const data = await response.json();
+
+    // Extract the BTC price from the response
+    const btcPrice = data.bitcoin.usd;
+
+    return btcPrice;
+  } catch (error) {
+    console.error('Error fetching BTC price:', error);
+    return null;
+  }
+}
+
+// Example usage
+getBTCPrice().then((price) => {
+  if (price !== null) {
+    console.log('Current BTC Price:', price);
+  }
+});
+
+
+
+
+        var typed = new Typed('#element', {
+            strings: ['PAY LESS', 'TRADE MORE'],
+            typeSpeed: 50,
+            loop: true
+        });
+
+        var typed = new Typed('#element2', {
+            strings: ['PAY LESS', 'TRADE MORE'],
+            typeSpeed: 50,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>
